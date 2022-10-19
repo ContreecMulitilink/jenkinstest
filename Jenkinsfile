@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Initialization') {
             when {
-                expressions {
+                expression {
                     env.ENGINEER == 'olu'
                 }
             }
