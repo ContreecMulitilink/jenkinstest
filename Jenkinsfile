@@ -9,7 +9,7 @@ pipeline {
     stages {
         stage('Initialization') {
             options {
-                timeout (time: 5, unit: 'SECONDS')
+                timeout (time: 30, unit: 'SECONDS')
             }
             steps {
                 echo "testing my pipeline with ${env.ENGINEER}"
