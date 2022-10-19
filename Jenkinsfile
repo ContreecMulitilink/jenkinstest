@@ -6,6 +6,9 @@ pipeline {
     environment {
         ENGINEER = "segun"
     }
+    options {
+        timestamps()
+    }
     stages {
         stage('Initialization') {
             when {
