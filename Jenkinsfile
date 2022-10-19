@@ -13,6 +13,7 @@ pipeline {
             }
             steps {
                 echo "testing my pipeline with ${env.ENGINEER}"
+                echo "my current build is ${env.BUILD_NUMBER}"
                 input (message: "Please review code, then proceed", ok: "yes")
             }
         }
