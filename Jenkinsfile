@@ -8,6 +8,11 @@ pipeline {
     }
     stages {
         stage('Initialization') {
+            when {
+                expressions {
+                    env.ENGINEER == 'olu'
+                }
+            }
             options {
                 timeout (time: 30, unit: 'SECONDS')
             }
