@@ -4,7 +4,7 @@ pipeline {
         maven "maven3.8.6"
     }
     environment {
-        ENGINEER = "segun"
+        ENGINEER = "olu"
         GITCRED = credentials('github_cred')
     }
     options {
