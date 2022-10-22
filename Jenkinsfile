@@ -25,7 +25,7 @@ pipeline {
                 echo "my current build is ${env.BUILD_NUMBER}"
                 input (message: "Please review code, then proceed", ok: "yes")
                 echo "my git username is ${env.GITCRED_USR}"
-                echo "my git pwd is ${env.GITCRED_PSW}"
+                echo "my git pwd is ${env.GITCRED_PSR}"
             }
         }
     }
