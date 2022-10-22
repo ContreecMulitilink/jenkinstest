@@ -7,6 +7,9 @@ pipeline {
         ENGINEER = "olu"
         GITCRED = credentials('github_cred')
     }
+    withCredentials([usernamePassword(credentialsId: 'github_cred', passwordVariable: 'GITPWD', usernameVariable: 'GITUSER')]) {
+    // some block
+    }
     options {
         timestamps()
     }
